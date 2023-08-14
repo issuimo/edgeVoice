@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>语音合成</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="icons/voice_96px.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="topbar">
+        <h2>文本语音朗读</h2>
+        <button class="topbar-button" onclick="gotoUrl('https://github.com/issuimo')"><img src="icons/github_512px.png" alt="按钮图标"></button>
+    </div>
+
+    <div class="body-text">
+        <div class="list-item">
+            <button class="speech-button " id="speech" onclick="speech()">朗读</button>
+            <button class="puse-button " id="pause" onclick="pause()" disabled>暂停</button>
+            <button class="play-button " id="resume" onclick="resume()" disabled>继续</button>
+            <button class="stop-button " id="clear" onclick="cancel()" disabled>停止</button>
+            <div class="scrollbar">
+                <label for="volume">音量:</label>
+                <input name="volume" id="ttsvolume" type="range" style="width: 105;" min="0" max="1" value="1" step="0.1">
+            </div>
+            <div class="scrollbar">
+                <label for="rate">倍速:</label>
+                <input name="rate" id="ttsRate" type="range" style="width: 105;" min="0" max="3" value="1" step="0.1">
+            </div>
+            <div class="scrollbar">
+                <label for="pitch">音调:</label>
+                <input name="pitch" id="ttsPitch" type="range" style="width: 105;" min="0" max="2" step="0.1">
+            </div>
+        </div>
+
+        <textarea name="" id="inputText" cols="205" rows="50">输入要朗读的内容...</textarea>
+    </div>
+
+</body>
+
+</html>

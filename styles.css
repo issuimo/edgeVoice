@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    display: block !important;
+    font-size: 1.5em !important;
+    margin-block-start: 0.83em !important;
+    margin-block-end: 0.83em !important;
+    margin-inline-start: 0px !important;
+    margin-inline-end: 0px !important;
+    font-weight: bold !important;
+}
+
+.topbar {
+    padding: 0 !important;
+    padding-left: 20px !important;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #4285F4;
+    color: #fff;
+    align-items: center;
+    padding: 0 20px;
+    justify-content: space-between;
+}
+
+.body-text {
+    margin-top: 60px;
+}
+
+.list-item {
+    display: flex;
+    border: 1px solid gray;
+    padding: 5px;
+    margin: 5px;
+}
+
+.input-item {
+    border: 1px solid gray;
+    padding: 5px;
+    margin: 5px;
+    min-height: 500px;
+}
+
+.topbar-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    width: 80px;
+}
+
+.topbar-button>img {
+    max-width: 50px;
+    max-height: 50px;
+    object-fit: cover;
+}
+
+.speech-button {
+    color: #fff;
+    background-color: #4285F4;
+    min-width: 50px;
+    height: 35px;
+    border: none;
+}
+
+.stop-button {
+    margin-left: 5px;
+    color: #fff;
+    background-color: gray;
+    min-width: 50px;
+    height: 35px;
+    border: none;
+}
+
+.puse-button {
+    margin-left: 5px;
+    color: #fff;
+    background-color: gray;
+    min-width: 50px;
+    height: 35px;
+    border: none;
+}
+
+.play-button {
+    margin-left: 5px;
+    color: #fff;
+    background-color: gray;
+    min-width: 50px;
+    height: 35px;
+    border: none;
+}
+
+.scrollbar {
+    margin-left: 5px;
+    align-items: center;
+    display: flex;
+}
+
+.scrollbar>select {
+    max-height: 35px !important;
+}
+
+label {
+    min-width: 30px !important;
+}
+
+textarea {
+    margin: 5px !important;
+    padding: 5px !important;
+    height: 500px !important;
+    max-width: 99vw !important;
+}
+
+select {
+    display: block !important;
+}
